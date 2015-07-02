@@ -8,25 +8,54 @@
 	<link rel="stylesheet" href="css/bootstrap-theme.css">
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.js"></script>
-	<script>
-	$(function () {
-  		$('[data-toggle="tooltip"]').tooltip()
-	})
-	</script>
+	<style>
+		html,body {
+			height:100%;
+		}
+		body {
+			padding-top:70px;
+		}
+		main {
+			min-height:100%;
+		}
+		footer {
+			background-color:#333;
+			color:#aaa;
+			padding:20px 0;
+			text-align: center;
+			margin-top:20px;
+		}
+	</style>
 </head>
 <body>
+<header>
+		<nav class="navbar navbar-fixed-top navbar-inverse">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#home">Kunstee</a>
+				<button class="navbar-toggle" type="button"
+					data-target=".navbar-collapse" data-toggle="collapse">
+					Menu
+				</button>
+			</div>
+			<ul class="nav navbar-nav navbar-collapse collapse">
+				<li><a href="index.html#novidades">Novidades</a></li>
+				<li><a href="index.html#maisVendidos">Mais Vendidos</a></li>
+			</ul>
+	</nav>
+</header>
+<main>
 	<div class="container">
 		<div class="row">
-			<h3 class="alert alert-warning text-center">Produto em promoção!</h3>
+			<h3 class="alert alert-warning text-center">Preço promocional até hoje as 22:00</h3>
 		</div>
 		<div class="row">
 			<div class="col-sm-4">
-				<img src="img/produto.png" alt="Fuzzy Cardigan" 
+				<img src="img/produto.png" alt="Camiseta feminina azul" 
 				class="img-thumbnail img-responsive">			
 			</div>
 			<div class="col-sm-8">
 				<div class="row text-center">
-					<h1>Fuzzy Cardigan</h1>
+					<h1>Camiseta feminina azul</h1>
 					<h3>R$ 129,00</h3>
 					<button type="submit" class="btn btn-primary btn-lg">Comprar</button>
 				</div>
@@ -43,20 +72,41 @@
 					</ul>
 				    <div class="tab-content">
 				        <div class="tab-pane fade in active" id="A">
-				        	<p>Peça especial, você nunca encontrará uma igual
+				        	<p>
+				        		Blusa feminina básica elaborada em algodão que proporciona total conforto e liberdade nos movimentos
+				        	</p>
+				        	<p>Possui modelagem diferenciada ampla, meia manga e decote em V. Perfeita para compor looks versáteis no dia a dia.
+				        	</p>
 				        </div>
 				        <div class="tab-pane fade" id="B">
 				        	<table class="table table-responsive">
 				        		<thead>
-				        			<th>Lugar de Origem</th>
-				        			<th>Tecido</th>
-				        			<th data-toggle="tooltip" 
-				        			data-placement="top" title="Pode sim!">Pode lavar?</th>			
+				        			<tr>
+					        			<th>Caracteristica</th>
+					        			<th>Valor</th>
+				        			</tr>
 				        		</thead>
 				        		<tbody>
-				        			<td>Brasil</td>
-				        			<td>Algodão</td>
-				        			<td >Sim</td>
+				        			<tr>
+				        				<td>Tecido</td>
+				        				<td>Algodão</td>
+				        			</tr>
+				        			<tr>
+				        				<td>Tamanhos</td>
+				        				<td>P,M,G,GG</td>
+				        			</tr>
+				        			<tr>
+				        				<td>Marca</td>
+				        				<td>Fabricação própria</td>
+				        			</tr>
+				        			<tr>
+				        				<td>Cor Principal</td>
+				        				<td>Azul</td>
+				        			</tr>
+				        			<tr>
+				        				<td>Categoria</td>
+				        				<td>Moda feminina</td>
+				        			</tr>
 				        		</tbody>
 				        	</table>
 				        </div>
@@ -65,5 +115,12 @@
 			</div>
 		</div>
 	</div>
+
+</main>
+<footer>
+	<p>Todos os direitos reservados</p>
+	<p>Avenida Paulista, 1. São Paulo - SP</p>
+</footer>
+
 </body>
 </html>
